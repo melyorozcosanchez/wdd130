@@ -25,7 +25,20 @@ a {
     padding: 100px;
   }
 
-  footer {
+/* week 3-I added a new aspect of letter to this section*/
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+/* w3-I added a indicative that showing an active page (that is "home page"), in the nav or menu, where the user are on*/
+#active {
+  background-color: white;
+  color: steelblue;
+}
+
+footer {
     background-color: steelblue;
     color: white;
   }
