@@ -6,6 +6,11 @@ nav, footer {
     padding: 10px;
     text-align: center;
   }
+
+  /*Week 5-I added padding to the menu in a new sentences because the other one there is footer too.*/
+nav {
+    padding: 25px;
+}
   
 
 a {
@@ -13,6 +18,8 @@ a {
     margin: 40px;
     /*Week 4-I added a relative measurement. This adjust the width of the navigation links according to the width of the device*/
     font-size: 1.5em;
+    /*Week 5-I added padding to the menu*/
+    padding: 25px;
   }
 
   a:hover {
@@ -23,6 +30,8 @@ a {
   h1 {
     color: steelblue;
     text-align: center;
+     /*Week 4-I added a margin to the top and botton of 50 and margin 0 to left aand right sides*/
+    margin: 50px 0;
   }
 
   img {
@@ -77,4 +86,10 @@ footer {
   footer p {
     font-size: 20px;
     margin: 20px auto;
+     /*Week 5-I added a padding to the footer*/
+    padding: 25px;
+}
+
+body {
+  margin: 0
 }
