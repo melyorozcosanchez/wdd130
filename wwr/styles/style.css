@@ -26,7 +26,7 @@ body {
     /*1.Change your Body and headline fonts*/
     font-family: Merriweather, Georgia , Garamond;
     font-size: 2em;
-    /* 5.Adding Margins*/
+    /* Adding Margins*/
     margin-top: 10px;
 }
    
@@ -37,7 +37,7 @@ nav a {
     color: #193247;
     /* Take off or add the default underline of links*/
     text-decoration: none;
-    /* 4. Adding Padding*/
+    /* Adding Padding*/
     padding: 35px;
 }
 /* Adding Padding*/
