@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY BIOENGINEERING | About me</title>
+    <!--  External Stylesheets-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Adding a container for our entire page-->
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logomely.png" alt="Mely Logo">
+            </a>
+
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="study-engineering.html"> Study Engineering </a>
+                <a href="about-me.html"> About me </a>
+                <a href="contactus.html"> Contact </a>
+            </nav>
+        </header>
+
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/studentfemale.jpg" alt="Student female">
+            </div>
+
+            <section id="hero-msg">
+                <h1 class="aboutme-title"> About me</h1>
+            </section>
+        </div>
+        
+        <main class="aboutme-grid">
+
+             <!-- Introduccion seccion-->
+            <section class="bioengineering-section">
+                <h4 class="bioengineering-title"> I am a Bioengineering student.</h4>
+                <p class="bioengineering-msg">  By studying a career that combines electronic engineering with medicine, I have been able to find and develop study METHODS and SYSTEMS that allow me to study fewer hours a day and more effectively, managing to retain knowledge in the long term and to be able to apply it later, in practical problems.
+
+                </p>
+            </section>
+                            
+            <!-- The first two images are shown using a Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img class="melystudent-img" src="images/mely.jpg" alt="Photo of Mely as student">
+                <div class="text">Mely</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img class="melycongress-img" src="images/melyincongress.jpg" alt="Mely in a congress">
+                <div class="text">Mely in a congress</div>
+                </div>
+            
+                        
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              
+            </div>
+
+            <script>
+                 let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    }
+
+            </script>
+
+            
+
+            <section class="programming-section">
+                <h4 class="programming-title"> I am a programming student at BYU Idaho.</h4>
+                <p class="programming-msg"> Currently, I am completing my first certification, entirely in English (My native language is Spanish), with the BYU-I university in its online program "Web & Computer programming", so I continue to develop the English language along with the ability to work as a team with people from other countries and languages.
+                </p>
+               
+            </section>
+
+         
+
+            <!-- Adding a container for our message background-->
+            <div id="selftaught-background"></div>
+            
+            <section class="selftaught-msg">
+                <h4 class="selftaught-title"> I am a self-taught student </h4>
+                <p class="selftaught-msg">I share and emphasize this ability to "learn on my own", in my individual consultancies as well as in my content on social networks, since I consider it vital so that SUCCESS IN YOUR STUDIES does not depend on another person, but only on you. .
+                    Also, as a Self-Taught person, I believe in the term: "Lifelong learning", that is, learning should be a lifestyle, including not only academic study but other experiences with people, places, etc.
+                </p>    
+                    
+                <img class="study-img" src="images/melystudying.jpg" alt="Mely studying">
+
+            </section>
+
+            <section class="manicurebusiness-msg">
+                <img class="manicurebusiness-img" src="images/melymanicure.jpg" alt="Mely as a professional manicure">
+                <h4 class="manicurebusiness-title"> Study and managing my online business at the same time. </h4>
+                <p class="manicurebusiness-msg">I have an online manicure training business, which I run alongside my university studies.
+                    So, after several years of having my own business and studying at the university at the same time, I have come to adopt specific routines and systems, in my day to day, to lead a PRODUCTIVE LIFE but without so much stress, achieving a balance between being student and being an entrepreneur.
+                </p>    
+                    
+            </section>
+
+            
+
+                   
+        </main>
+        
+        <footer>
+            <p>Study Bioengineering &copy; 2023 - Melisa Orozco Sanchez</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+
+            <div class="social">
+                <!--  External links-->
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
