@@ -5,7 +5,7 @@
 body {
     background-color: #e2eaed; 
     font-family: Poppins, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     /* Simple Reset*/
     margin: 0;
     padding: 0;
@@ -231,6 +231,8 @@ footer .social img{
 .studyengineering-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
+    grid-gap: 20px;
+    align-items: center;
 
 }
 
@@ -238,14 +240,14 @@ footer .social img{
     width: 100%;
     box-shadow: 5px 5px 10px #050505; 
     grid-column: 2/6;
-    grid-row: 2/4;
+    grid-row: 1/5;
+    margin-right: 30px;
+    margin-top: -30px;
 }
 
 .study-msg{
-    color:#000000;
-    background-color:#cab49d;  /*arreglar este color*/
-    /* Adjusting font sizes*/
-   line-height: 1.5em;
+
+    background-color:#de92f4; 
     /*  Adding Padding*/
    padding: 35px;
    grid-column: 5/10;
@@ -253,6 +255,7 @@ footer .social img{
    z-index: 1;
    /* Enhancements*/
    box-shadow: 5px 5px 10px #050505;
+   margin-left: 20px;
    
 }
 
@@ -260,27 +263,40 @@ footer .social img{
 
 #studymethods-background{
     background-color: #3782da;
-    height: 725px;
+    height: 500px;
     grid-column: 1/11;
-    grid-row: 5/8;
+    grid-row: 5/6;
 }
 
 .studymethods{
     grid-column: 2/10;
     grid-row: 5/8;
+    justify-self: center;
+    align-self: center;
+    color:#ffffff;
+    margin-top: -30px;
 }
+
+
 
 .habittime{
     grid-column: 2/10;
     grid-row: 8/11; 
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
 }
 
-.youtube {
-    width: 560px; 
-    height: 315px; 
+.youtube1, .youtube2, .youtube3, .youtube4 {
+    width: 1920px; 
+    height: 1080px;
+   /* frameborder: 0; /* I put this as a comment because It said that 'frameborder' is an uknown property in VS Code*/
 }
 
+.video-player{
+    margin: 30px 20px;
 
+}
 
 
 /*CSS of "About me" page using a simple component:Slideshow / Carousel, as part of the W12 Assignment: A Web Component*/
