@@ -128,59 +128,73 @@ main img {
     box-sizing: border-box;
  }
 
- .introduction{
+ .home-grid, .studyengineering-grid, .aboutme-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    
+    grid-template-columns: repeat(10, 1fr); 
+    grid-gap: 20px;
+    align-items: center;
+
 }
 
-.introduction-msg{
-    grid-column: 1/2;
-    margin: 50px;
-  
+.introduction{
+    grid-column: 2/6;
+    grid-row: 1/4; 
+    justify-self: center;
+    align-self: center;
+    margin-top: -100px;
+    margin-right: 40px;
+ 
     
 }
 
 .introduction-img{
-    grid-column: 2/3;
     width: 100%;
-    margin: 50px 50px;
-    text-align: center;
+    box-shadow: 5px 5px 10px #050505; 
+    grid-column: 6/10;
+    grid-row: 1/4;
+    margin-top: -100px;
+    margin-left: 20px;
     
-}
-/*
-.home-grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-}*/
-#background{
-    grid-column: 1/7;
-    margin: 20px;
-    height: 725px;
-    background-color: #3782da;
+
+    
 }
 
-.helpyou-title, .helpyou-msg{
-    grid-column: 1/7;
-    margin: 20px;
-    
+#background{
+    background-color: #3782da;
+    height: 790px;
+    grid-column: 1/11;
+    grid-row: 5/12;
+}
+
+.helpyou {
+    grid-column: 2/6;
+    grid-row: 6/9; 
+    justify-self: center;
+    align-self: center;
+    margin-right: 80px;
+   
     
 }
 
 .sadstudent-img{
     grid-column: 7/10;
-    width: 50%;
-    margin: 20px;
-    text-align: center;
+    grid-row: 5/8; 
+    width: 100%;
+    box-shadow: 5px 5px 10px #050505; 
+    margin-top: 70px;
+    margin-left: 20px;
     
     
 }
 
 .happystudent-img{
-    grid-column: 9/15;
-    width: 50%;
-    margin: 20px;
-    text-align: center;
+    grid-column: 6/9;
+    grid-row: 7/10;
+    width: 100%;
+    box-shadow: 5px 5px 10px #050505; 
+    margin-top: 70px;
+    margin-right: 250px;
+    z-index: 1;
     
     
 }
@@ -228,13 +242,7 @@ footer .social img{
     margin-top: 30px;
 }
 
-.studyengineering-grid, .aboutme-grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-    grid-gap: 20px;
-    align-items: center;
 
-}
 
 .study-img{
     width: 100%;
@@ -298,7 +306,7 @@ footer .social img{
 }
 
 /*CSS of About me page */
-.bioengineering-section{
+.bioengineering-section {
     grid-column: 2/4;
     grid-row: 1/5; 
     justify-self: center;

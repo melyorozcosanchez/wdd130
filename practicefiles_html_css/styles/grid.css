@@ -1,0 +1,92 @@
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+
+* {
+    box-sizing: border-box;
+  }
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    align-items: center;
+    background-color: #e2eaed;
+  
+  }
+  
+  .grid1 h1 {
+    
+  }
+  
+  .grid2 {
+    grid-column: 2/6;
+    grid-row: 1/2;
+   background-color: #3782da;
+  }
+  .grid2 h2 {
+  }
+  .grid3 {
+    grid-column: 7/11;
+    grid-row: 1/2;
+    background-color: #de92f4
+
+  }
+  
+  .grid3 h3 {
+   
+  }
+  
+  .grid4 {
+    grid-column: 4/11;
+    grid-row: 2/3;
+    background-color: #41b059
+  }
+  
+  .grid4 h2 {
+    
+  }
+  
+  section {
+    
+  }
+  
+  section h2 {
+    
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(1fr 5fr);
+    align-items: center;
+  }
+  
+  
+  legend {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  fieldset > div {
+    display: grid;
+    grid-template-columns: repeat(1fr 2fr);
+    grid-gap: 0 1em;
+    align-items: center;
+  }
+  
+  label {
+    align-items: left;
+  }
+  
+  input {
+    align-items: right;
+    width: 100%;
+  }
+  
+  button {
+    
+  }
+  
+  section > div {
+    
+  }
