@@ -503,17 +503,18 @@ img {vertical-align: middle;}
     }
     nav a {
         display: block;
+        padding: 15px;
        
     }
 
-    /*
+    
     #hero {
         margin-top: 0;
-    }*/
+    }
     #hero-msg {
         margin-top: -50px;
     }
-    /*#hero-msg h4 {
+    #hero-msg h4 {
         display: none;
     }
     .home-title {
@@ -523,7 +524,7 @@ img {vertical-align: middle;}
     
     #background {
         display: none;
-    }*/
+    }
     .introduction, .introduction-img, .helpyou, .sadstudent-img, .happystudent-img{
         width: 80%;
         display: block;
