@@ -487,18 +487,14 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
 
 @media screen and (max-width: 900px) {
 
+    .prev, .next,.text {font-size: 8px}
 
-    header, main {
-        display: block;
-    } 
-
-    #hero, .home-grid {
+    
+    #hero, .home-grid, .aboutme-grid, .studyengineering-grid {
         display: block;
         height: auto;
     }
@@ -520,7 +516,7 @@ img {vertical-align: middle;}
     }
     .home-title {
         font-size: 25px;
-        color: #417cb1;
+        color: #3782da;
     }
     
     #background {
