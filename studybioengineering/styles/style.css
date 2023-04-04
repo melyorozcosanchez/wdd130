@@ -443,7 +443,7 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
+/*.dot {
   cursor: pointer;
   height: 20px;
   width: 20px;
@@ -453,10 +453,25 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
   
+}*/
+
+.dots {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #8ab7dd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+    grid-column: 4/8;
+    grid-row: 4/5;
+    z-index: 3;
+    position: relative;
 }
 
-
-.active, .dot:hover {
+.active, .dots:hover {
   background-color: #3782da;
 }
 
@@ -474,4 +489,51 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 900px) {
+
+
+    header, main {
+        display: block;
+    } 
+
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #417cb1;
+    }
+    
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+        display: block;
+    }
+
 }
