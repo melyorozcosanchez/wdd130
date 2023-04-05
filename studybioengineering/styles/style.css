@@ -491,10 +491,13 @@ img {vertical-align: middle;}
 
 @media screen and (max-width: 900px) {
 
-    .prev, .next,.text {font-size: 8px}
+   
 
-    
-    #hero, .home-grid, .aboutme-grid, .studyengineering-grid {
+     main{
+        display: block;
+    } 
+
+    #hero, .home-grid, .studyengineering-grid, .aboutme-grid {
         display: block;
         height: auto;
     }
@@ -504,35 +507,69 @@ img {vertical-align: middle;}
     nav a {
         display: block;
         padding: 15px;
-       
     }
-
-    
     #hero {
         margin-top: 0;
+        margin-bottom: 70px;
     }
     #hero-msg {
-        margin-top: -50px;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #3782da;
+        margin-top: -170px;
+    
+    
     }
     
-    #background {
-        display: none;
-    }
-    .introduction, .introduction-img, .helpyou, .sadstudent-img, .happystudent-img{
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-        display: block;
+    .home-title {
+        font-size: 27px;
+        margin: 0 20px;
+        
     }
 
+    .studyengineering-title, .aboutme-title {
+        font-size: 30px;
+        margin: 70px 20px;
+        
+    }
+
+    .introduction, .introduction-img, .happystudent-img, .sadstudent-img, .study-img, .study-msg, .studymethods, .habittime, .bioengineering-section, .programming-section, .manicurebusiness-img, .manicurebusiness-msg, .studybooks-img  { 
+        margin: 10px auto;
+        width: 80%;
+        display: block;
+        color:#000000;
+    }
+
+    .helpyou{
+        margin: 10px auto;
+        width: 80%;
+        display: block;
+        background: #3782da;
+        padding: 20px;
+    }
+
+    .selftaught-msg {
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+        background: #de92f4;
+        padding: 5 px;
+    
+    }
+
+    .video-player {
+        margin: 10px auto;
+        width: 100%;
+        display: block;
+       
+
+    }
+
+    .prev, .next,.text {font-size: 18px}
+
+    #background, #studymethods-background, #selftaught-background {
+        display: none;
+    }
+   
+    footer {
+        margin-top: 25px;
+    }
 }
+    
